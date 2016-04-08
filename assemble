@@ -61,7 +61,7 @@ set +e
 [[ -d ./tmp ]] && chgrp -R 0 ./tmp && chmod -R g+rw ./tmp
 [[ -d ./db ]] && chgrp -R 0 ./db && chmod -R g+rw ./db
 set -e
-echo "root:redhat" | chpasswd
+echo "root:redhat" | sudo chpasswd
 echo "---> s2i build by yandb scripts ..."
 
 cat /etc/resolv.conf
