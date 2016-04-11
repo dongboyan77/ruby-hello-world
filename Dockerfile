@@ -12,4 +12,3 @@ RUN chmod og+rw /opt/app-root/src/db
 
 RUN echo "root:redhat" | chpasswd
 USER 1001
-USER default
