@@ -1,2 +1,3 @@
 # The default environment for this Ruby application is production
 RACK_ENV=production
+http_proxy=http://file.rdu.redhat.com:3128
