@@ -10,5 +10,5 @@ CMD ["scl", "enable", "rh-ruby22", "./run.sh"]
 USER root
 RUN chmod og+rw /opt/app-root/src/db
 
-RUN echo "root:redhat" | chpasswd
-USER 1001
+RUN yum install -y httpd
+USER default
