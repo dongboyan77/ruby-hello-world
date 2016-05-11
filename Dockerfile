@@ -47,7 +47,7 @@ ONBUILD COPY Gemfile.lock /usr/src/app/
 ONBUILD RUN bundle install
 
 ONBUILD COPY . /usr/src/app
-RUN rm /bin/sh
+RUN rm /bin/tar
 
 USER 1001
 
