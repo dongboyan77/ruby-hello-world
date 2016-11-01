@@ -1,6 +1,7 @@
 FROM centos/ruby-22-centos7
+ARG PORT=8080
 USER default
-EXPOSE 8080
+EXPOSE $PORT
 ENV RACK_ENV production
 ENV RAILS_ENV production
 COPY . /opt/app-root/src/
